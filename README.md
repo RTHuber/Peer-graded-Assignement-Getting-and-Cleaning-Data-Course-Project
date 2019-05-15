@@ -8,7 +8,7 @@ output: html_document
 # README - Explanation of what the script does
 
 ## 0. Sets the working directory where all the required files with the data are
-setwd("~/Library/Mobile Documents/com~apple~CloudDocs/Coursera/Data Science Specialization - John Hopkins/Course 3 - Getting and Cleaning Data/Course Project/Data Project Course 3")
+setwd("")
 
 ## 1.	Merges the training and the test sets to create one data set  
       This part of the script does the following  
