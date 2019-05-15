@@ -70,8 +70,9 @@ setwd("")
       laying<-filter(MeansStdDataFrame, Activity == "LAYING")
       LayingMeans<-data.frame(colMeans(laying[,4:82]))
       
-      Avg_Variable_by_Activity<-cbind("Observations", WalkingMeans, WalkingUpstairsMeans, WalkingDownstairsMeans, SittingMeans, StandingMeans, LayingMeans)
-      colnames(Avg_Variable_by_Activity)<-c("Observations", "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
+      Avg_Variable_by_Activity<-cbind(WalkingMeans, WalkingUpstairsMeans, WalkingDownstairsMeans, SittingMeans, StandingMeans, LayingMeans)
+      colnames(Avg_Variable_by_Activity)<-c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
       
-      write.table(Avg_Variable_by_Activity, "190514_AverageMeasurements.txt", sep=",")
+      write.table(Avg_Variable_by_Activity, "190514_AverageMeasurements.txt", sep=",", row.name = FALSE)
+      
       
